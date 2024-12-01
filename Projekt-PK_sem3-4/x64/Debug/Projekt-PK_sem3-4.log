@@ -1,0 +1,11 @@
+﻿  ARX.cpp
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\ARX.cpp(1,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+  Generator.cpp
+  PID.cpp
+  Sprzezenie_zwrotne.cpp
+  Symulacja.cpp
+  Testy_PID.cpp
+  Zarzadzanie_plikami.cpp
+  main.cpp
+  Generowanie kodu...
+  Projekt-PK_sem3-4.vcxproj -> C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\x64\Debug\Projekt-PK_sem3-4.exe
