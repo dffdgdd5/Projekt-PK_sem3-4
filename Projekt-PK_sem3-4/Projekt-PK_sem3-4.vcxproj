@@ -133,6 +133,7 @@
     <ClCompile Include="PID.cpp" />
     <ClCompile Include="Sprzezenie_zwrotne.cpp" />
     <ClCompile Include="Symulacja.cpp" />
+    <ClCompile Include="Testy_ARX.cpp" />
     <ClCompile Include="Testy_PID.cpp" />
     <ClCompile Include="Zarzadzanie_plikami.cpp" />
   </ItemGroup>

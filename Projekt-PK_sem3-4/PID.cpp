@@ -1,37 +1,37 @@
 #include "PID.h"
 
 PID::PID(float up, float ui, float ud)
-    : Wzmocnienie(up), StalaCalkowania(ui), StalaRozniczkowania(ud),
-    SumaCalkowania(0.0f), MinWyjscie(-100.0f), MaxWyjscie(100.0f)
+    : wzmocnienie(up), stalaCalkowania(ui), stalaRozniczkowania(ud),
+    sumaCalkowania(0.0f), minWyjscie(-100.0f), maxWyjscie(100.0f)
 {
-    PoprzednieWartosci.resize(1, 0.0f);
+     poprzednieWartosci.push_back(0.0f);
 }
 
 void PID::UstawOgraniczenia(float minWyjscie, float maxWyjscie) {
-    MinWyjscie = minWyjscie;
-    MaxWyjscie = maxWyjscie;
+    this->minWyjscie = minWyjscie;
+    this->maxWyjscie = maxWyjscie;
 }
 
 float PID::ObliczProporcjonalne(float uchyb) {
-    return Wzmocnienie * uchyb;
+    return wzmocnienie * uchyb;
 }
 
 float PID::ObliczCalka(float uchyb) {
-    if (StalaCalkowania)
+    if (stalaCalkowania)
     {
-        SumaCalkowania += uchyb;
-        return SumaCalkowania / StalaCalkowania;
+        sumaCalkowania += uchyb;
+        return sumaCalkowania / stalaCalkowania;
     }
     else return 0;
 }
 
 float PID::ObliczRozniczka(float uchyb) {
     float wartoscRozniczkujaca = 0.0f;
-    if (!PoprzednieWartosci.empty())
-        wartoscRozniczkujaca = StalaRozniczkowania * (uchyb - PoprzednieWartosci.back());
-    else wartoscRozniczkujaca = StalaRozniczkowania * uchyb;
+    if (! poprzednieWartosci.empty())
+        wartoscRozniczkujaca = stalaRozniczkowania * (uchyb -  poprzednieWartosci.back());
+    else wartoscRozniczkujaca = stalaRozniczkowania * uchyb;
 
-    PoprzednieWartosci.push_back(uchyb);
+     poprzednieWartosci.push_back(uchyb);
 
     return wartoscRozniczkujaca;
 }
@@ -51,7 +51,7 @@ float PID::Sumator(float wejscie, float wyjscie)
 }
 
 void PID::Reset() {
-    SumaCalkowania = 0.0f;
-    PoprzednieWartosci.clear();
-    PoprzednieWartosci.push_back(0.0f);
+    sumaCalkowania = 0.0f;
+     poprzednieWartosci.clear();
+     poprzednieWartosci.push_back(0.0f);
 }

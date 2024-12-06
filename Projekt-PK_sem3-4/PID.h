@@ -2,13 +2,13 @@
 
 class PID {
 private:
-    float Wzmocnienie;
-    float StalaCalkowania;
-    float StalaRozniczkowania;
-    float SumaCalkowania;
-    float MinWyjscie;
-    float MaxWyjscie;
-    std::vector<float> PoprzednieWartosci;
+    float wzmocnienie;
+    float stalaCalkowania;
+    float stalaRozniczkowania;
+    float sumaCalkowania;
+    float minWyjscie;
+    float maxWyjscie;
+    std::vector<float> poprzednieWartosci;
 
 public:
     PID(float, float = 0, float = 0);

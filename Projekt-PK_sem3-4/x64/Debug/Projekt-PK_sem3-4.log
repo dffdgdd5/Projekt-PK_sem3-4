@@ -1,11 +1,7 @@
-﻿  ARX.cpp
-C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\ARX.cpp(1,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-  Generator.cpp
-  PID.cpp
-  Sprzezenie_zwrotne.cpp
-  Symulacja.cpp
-  Testy_PID.cpp
-  Zarzadzanie_plikami.cpp
+﻿  Generator.cpp
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\Generator.cpp(42,22): warning C4244: "return": konwersja z "int" do "float", możliwa utrata danych
   main.cpp
+  Symulacja.cpp
   Generowanie kodu...
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\Generator.cpp(48): warning C4715: "Generator::Generuj”: niewszystkie ścieżki kodu zwracają wartość
   Projekt-PK_sem3-4.vcxproj -> C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\x64\Debug\Projekt-PK_sem3-4.exe
