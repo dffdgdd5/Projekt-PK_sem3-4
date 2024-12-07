@@ -1,11 +1,4 @@
 ﻿  ARX.cpp
-C:\Users\mrzio\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\ARX.cpp(1,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
-  main.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
-  Symulacja.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
-  Testy_ARX.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
-  Generowanie kodu...
-  Projekt-PK_sem3-4.vcxproj -> C:\Users\mrzio\Documents\GitHub\Projekt-PK_sem3-4\x64\Debug\Projekt-PK_sem3-4.exe
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\ARX.cpp(1,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\numbers(12): warning STL4038: The contents of <numbers> are available only with C++20 or later.
+  Projekt-PK_sem3-4.vcxproj -> C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\x64\Debug\Projekt-PK_sem3-4.exe
