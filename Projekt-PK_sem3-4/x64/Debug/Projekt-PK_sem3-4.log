@@ -1,7 +1,9 @@
-﻿  Generator.cpp
-C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\Generator.cpp(42,22): warning C4244: "return": konwersja z "int" do "float", możliwa utrata danych
-  main.cpp
+﻿  ARX.cpp
+C:\Users\mrzio\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\ARX.cpp(54,48): error C3447: drugi operand do operatora warunkowego ?: jest typu „void”, ale trzeci argument nie jest wyrażeniem throw ani nie ma typu „void”
   Symulacja.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
+  Testy_ARX.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
+  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
   Generowanie kodu...
-C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\Generator.cpp(48): warning C4715: "Generator::Generuj”: niewszystkie ścieżki kodu zwracają wartość
-  Projekt-PK_sem3-4.vcxproj -> C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\x64\Debug\Projekt-PK_sem3-4.exe
