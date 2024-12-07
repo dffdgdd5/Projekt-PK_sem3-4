@@ -4,7 +4,9 @@
 #include <cmath>
 #include <iostream>
 #include <numbers>
+#include <algorithm>
+#include <deque>
 
-#define DEBUG_PID
+#define DEBUG_ARX
 
 using namespace std;

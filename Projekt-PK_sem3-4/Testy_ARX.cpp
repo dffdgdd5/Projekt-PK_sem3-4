@@ -47,7 +47,7 @@ void test_ARX_brakPobudzenia()
 	
 		// Symulacja modelu:
 		for (int i = 0; i < LICZ_ITER; i++)
-			faktSygWy[i] = instancjaTestowa.symuluj(sygWe[i]);
+			faktSygWy[i] = instancjaTestowa.Oblicz(sygWe[i]);
 	
 		// Walidacja poprawności i raport:
 		if (porownanieSekwencji(spodzSygWy,faktSygWy))
@@ -85,7 +85,7 @@ void test_ARX_skokJednostkowy_1()
 
 		// Symulacja modelu:
 		for (int i = 0; i < LICZ_ITER; i++)
-			faktSygWy[i] = instancjaTestowa.symuluj(sygWe[i]);
+			faktSygWy[i] = instancjaTestowa.Oblicz(sygWe[i]);
 
 		// Walidacja poprawności i raport:
 		if (porownanieSekwencji(spodzSygWy, faktSygWy))
@@ -123,7 +123,7 @@ void test_ARX_skokJednostkowy_2()
 
 		// Symulacja modelu:
 		for (int i = 0; i < LICZ_ITER; i++)
-			faktSygWy[i] = instancjaTestowa.symuluj(sygWe[i]);
+			faktSygWy[i] = instancjaTestowa.Oblicz(sygWe[i]);
 
 		// Walidacja poprawności i raport:
 		if (porownanieSekwencji(spodzSygWy, faktSygWy))
@@ -160,7 +160,7 @@ void test_ARX_skokJednostkowy_3()
 
 		// Symulacja modelu:
 		for (int i = 0; i < LICZ_ITER; i++)
-			faktSygWy[i] = instancjaTestowa.symuluj(sygWe[i]);
+			faktSygWy[i] = instancjaTestowa.Oblicz(sygWe[i]);
 
 		// Weryfikacja poprawności i raport:
 		if (porownanieSekwencji(spodzSygWy, faktSygWy))

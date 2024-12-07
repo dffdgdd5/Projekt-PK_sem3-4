@@ -3,13 +3,19 @@
 
 class ARX
 {
-	vector<float> WektorA;
-	vector<float> WektorB;
-	int Opoznienie;
-	float Wyjscie; // ??
+	vector<float> wektorA;
+	vector<float> wektorB;
+	int opoznienie;
+	float m_u;
+
+	deque<float> historiaY;
+	deque<float> historiaU;
+	deque<float> opoznienieTransportowe;
 public:
-	ARX(vector<float>, vector<float>, int);
+	ARX(vector<float>, vector<float>, int, float);
 	void setWektory(vector<float>, vector<float>);
 	void setOpoznienie(int);
 	float Oblicz(float);
+	void inicjalizujBufory();
+
 };
