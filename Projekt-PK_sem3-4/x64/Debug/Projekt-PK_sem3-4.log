@@ -1,4 +1,15 @@
-﻿  ARX.cpp
-C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\ARX.cpp(1,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+﻿  main.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\numbers(12): warning STL4038: The contents of <numbers> are available only with C++20 or later.
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\main.cpp(22,23): warning C4305: "inicjowanie": obcięcie z "double" do "_Ty"
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\main.cpp(23,22): warning C4305: "inicjowanie": obcięcie z "double" do "_Ty"
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\main.cpp(30,11): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\Projekt-PK_sem3-4\main.cpp(32,27): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
   Projekt-PK_sem3-4.vcxproj -> C:\Users\Acer\Documents\GitHub\Projekt-PK_sem3-4\x64\Debug\Projekt-PK_sem3-4.exe
