@@ -12,3 +12,4 @@ public:
 	void OdczytajKonfiguracje();
 	void OdczytajSymulacje();
 };
+
