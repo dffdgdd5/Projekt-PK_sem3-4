@@ -13,6 +13,7 @@ class ARX
 	deque<float> opoznienieTransportowe;
 public:
 	ARX(vector<float>, vector<float>, int, float);
+	ARX(vector<float>, vector<float>, int);
 	void setWektory(vector<float>, vector<float>);
 	void setOpoznienie(int);
 	float Oblicz(float);

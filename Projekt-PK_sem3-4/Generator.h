@@ -19,6 +19,6 @@ private:
 
 public:
     Generator();
-    Generator(Typ, float, int , int, float);
+    Generator(Typ, float, int , int, float,float);
     float Generuj(int);
 };

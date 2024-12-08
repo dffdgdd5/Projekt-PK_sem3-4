@@ -13,7 +13,7 @@ private:
     std::vector<float> poprzednieWartosci;
 
 public:
-    PID(float, float = 0, float = 0);
+    PID(float, float = 0, float = 0, float = -20.0f, float = 20.0f);
     void UstawOgraniczenia(float, float);
 
     float ObliczProporcjonalne(float);

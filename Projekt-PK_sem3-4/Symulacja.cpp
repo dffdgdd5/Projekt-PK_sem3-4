@@ -24,6 +24,6 @@ void Symulacja::uruchom() {
         u = regulator.ObliczSterowanie(e);
         y = obiekt.Oblicz(u);
 
-        cout << "Wejscie:\t" << w << " PID:\t" << e << " \tWyjscie:\t" << y << endl;
+        cout << "Wejscie: " << w <<"\tPID: " << e << "\t\tWyjscie:\t" << y << endl;
     }
 }

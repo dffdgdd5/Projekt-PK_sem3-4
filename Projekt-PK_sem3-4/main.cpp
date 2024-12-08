@@ -12,28 +12,29 @@
 int main()
 {
 	//generator
-	float amplituda = 2;
-	int okres = 2;
-	Typ wyborTypu = Typ::prostokatny;
+	float amplituda = 3;
+	int okres = 5;
+	Typ wyborTypu = Typ::skokowy;
 	float wartoscStala = 1;
-	int p = 1;
+	float p = 0.8001;
+	int czasAktywacji = 0;
 
 	//arx
 	vector<float> A = { -0.4 };
 	vector<float> B = { 0.6 };
 	int u = 15;
-	int opoznienie = 0;
+	int opoznienie = 5;
 
 	//pid
 	float up = 0.5;
 	float ui = 10.0;
 	float ud = 0.2;
 
-	ARX arx(A,B, opoznienie, u);
+	ARX arx(A,B, opoznienie);
 	PID regulator(up, ui, ud);
-	Generator generator(wyborTypu,amplituda,okres,opoznienie,wartoscStala);
+	Generator generator(wyborTypu,amplituda,okres,czasAktywacji,wartoscStala, p);
 
-	Symulacja symulator(regulator, arx, generator, 50);
+	Symulacja symulator(regulator, arx, generator, 10000);
 
 	symulator.uruchom();
 }

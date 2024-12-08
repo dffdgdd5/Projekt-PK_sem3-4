@@ -1,5 +1,6 @@
 #include "ARX.h";
 
+#ifdef DEBUG_ARX
 ARX::ARX(vector<float> wektorA, vector<float> wektorB, int opoznienie, float i_u)
 :m_u(i_u)
 {
@@ -7,6 +8,16 @@ ARX::ARX(vector<float> wektorA, vector<float> wektorB, int opoznienie, float i_u
 	setWektory(wektorA, wektorB);
 	inicjalizujBufory();
 }
+#endif
+
+#ifdef RELEASE
+ARX::ARX(vector<float> wektorA, vector<float> wektorB, int opoznienie)
+{
+	setOpoznienie(opoznienie);
+	setWektory(wektorA, wektorB);
+	inicjalizujBufory();
+}
+#endif
 
 void ARX::setOpoznienie(int i_opoznienie)
 {
@@ -34,7 +45,17 @@ void ARX::inicjalizujBufory()
 
 float ARX::Oblicz(float u)
 {
+	float mean = 0, stdev = 0.1;
+
+	random_device gen_los;
+	mt19937 gen_plos;
+	gen_plos.seed(gen_los());
+
+	normal_distribution<float> rozkladGausa(mean, stdev);
+	float zaklocenia = rozkladGausa(gen_plos);
+
 	float wyjscie = 0.0f;
+	
 	opoznienieTransportowe.push_back(u);
 
 	if (opoznienieTransportowe.size() > opoznienie)
@@ -46,6 +67,7 @@ float ARX::Oblicz(float u)
 		if (historiaU.size() > wektorB.size())
 			historiaU.pop_back();
 	}
+	
 
 	for (int i = 0; i < wektorA.size(); i++)
 		wyjscie -= wektorA[i] * historiaY[i];
@@ -56,5 +78,5 @@ float ARX::Oblicz(float u)
 	if (historiaY.size() > wektorA.size())
 		historiaY.pop_back();
 
-	return wyjscie;
+	return wyjscie + zaklocenia;
 }
