@@ -7,6 +7,6 @@
 #include <algorithm>
 #include <deque>
 
-#define DEBUG_ARX
+#define RELEASE
 
 using namespace std;

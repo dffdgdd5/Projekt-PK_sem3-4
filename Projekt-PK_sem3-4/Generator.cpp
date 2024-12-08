@@ -22,7 +22,7 @@ Generator::Generator(Typ typ, float amplituda, int okres, int czasAktywacji, flo
 float Generator::Generuj(int czas)
 {
     if (wyborTypu == Typ::skokowy) 
-        return (czas <= czasAktywacji) ? wartoscStala : 0;
+        return (czas >= czasAktywacji) ? wartoscStala : 0;
     else if (wyborTypu == Typ::sinus)
     {
         float x = ((czas % okres)/okres)*2*PI;

@@ -1,6 +1,8 @@
+#pragma once
 #include "glowne.h"
 
-class PID {
+class PID 
+{
 private:
     float wzmocnienie;
     float stalaCalkowania;

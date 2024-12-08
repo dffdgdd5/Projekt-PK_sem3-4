@@ -11,25 +11,31 @@
 
 int main()
 {
+	//generator
+	float amplituda = 2;
+	int okres = 2;
+	Typ wyborTypu = Typ::prostokatny;
+	float wartoscStala = 1;
+	int p = 1;
 
-	vector<int> T;
-	T.push_back(1);
-	cout << T.size() << endl;
-	T.push_back(2);
-	cout << T.size() << endl;
-	T.push_back(3);
-	cout << T.size() << endl;
-	T.push_back(4);
-	cout << T.size() << endl;
-	T.push_back(5);
-	cout << T.size() << endl;
+	//arx
+	vector<float> A = { -0.4 };
+	vector<float> B = { 0.6 };
+	int u = 15;
+	int opoznienie = 0;
 
-	T.resize(T.size() + 1 );
-	move_backward(T.begin(), T.end() -1 , T.begin());
-	for (int i = 0; i < T.size(); i++)
-		cout << T[i] << " "; 
-	T[0] = 0;
+	//pid
+	float up = 0.5;
+	float ui = 10.0;
+	float ud = 0.2;
 
+	ARX arx(A,B, opoznienie, u);
+	PID regulator(up, ui, ud);
+	Generator generator(wyborTypu,amplituda,okres,opoznienie,wartoscStala);
+
+	Symulacja symulator(regulator, arx, generator, 50);
+
+	symulator.uruchom();
 }
 
 #endif
